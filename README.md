@@ -1,3 +1,3 @@
-# Go Weather App (Learning Go)
+# Go Weather App
 
-Uses an API to return weather information.
+I'm learning go so I made a weather app to practice my skills.  It uses an API to return weather information.

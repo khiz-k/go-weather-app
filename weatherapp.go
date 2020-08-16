@@ -9,8 +9,6 @@ import (
   "encoding/json"
 )
 
-// Structures
-
 type temperature struct {
   Value float64
   Unit string
@@ -22,7 +20,7 @@ type weather struct {
   PrecipitationProbability int
 }
 
-// Accuweather API
+// API
 
 func APIKey() string {
   file, err := os.Open("key.txt")
@@ -60,7 +58,6 @@ func formatHour(h weather) string {
   )
 }
 
-// Local webserver
 func handler (w http.ResponseWriter, r *http.Request) {
   // Get result
   url := generateURL()
